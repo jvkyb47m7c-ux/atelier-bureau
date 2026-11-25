@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Atelier Bureau – Offres et cadeaux</title>
+<meta name="description" content="Accessoires de bureau et organisation : offres de bienvenue, cadeaux et paiement par virement SEPA.">
+<meta name="theme-color" content="#0b0720">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Atelier Bureau – Offres et cadeaux">
+<meta property="og:description" content="Accessoires de bureau et organisation : offres de bienvenue, cadeaux et paiement par virement SEPA.">
+<meta name="robots" content="index,follow">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E🛍️%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Syne:wght@600;800&family=Manrope:wght@400;500;700&display=swap">
+<style>
+:root{--bg:#0b0720;--bg2:#140d34;--ink:#f4f1ff;--muted:#a79fcf;--glass:rgba(255,255,255,.06);--line:rgba(255,255,255,.14);--violet:#7c3aed;--pink:#ff3cac;--cyan:#2bd9fe;--amber:#ffb86b;--a:#ece7ff;--ok:#4fe0a8;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);color-scheme:dark}
+@media (prefers-color-scheme:light){:root:not([data-theme="dark"]){--bg:#f6f2ff;--bg2:#ebe3ff;--ink:#1a1038;--muted:#5d5486;--glass:rgba(255,255,255,.7);--line:rgba(40,20,90,.16);--a:#2a1a5a;--ok:#0f8a5f;--pink:#d6247f;--amber:#c25a0a;--cyan:#0a86ad;--violet:#6d28d9;color-scheme:light}}
+:root[data-theme="light"]{--bg:#f6f2ff;--bg2:#ebe3ff;--ink:#1a1038;--muted:#5d5486;--glass:rgba(255,255,255,.7);--line:rgba(40,20,90,.16);--a:#2a1a5a;--ok:#0f8a5f;--pink:#d6247f;--amber:#c25a0a;--cyan:#0a86ad;--violet:#6d28d9;color-scheme:light}
+html{scroll-padding-top:80px;scroll-behavior:smooth}
+*{box-sizing:border-box}
+body{margin:0;background:radial-gradient(1200px 700px at 80% -10%,var(--bg2),var(--bg));background-color:var(--bg);color:var(--ink);font-family:Manrope,system-ui,-apple-system,"Segoe UI",sans-serif;line-height:1.55}
+h1,h2,h3,.logo,.price{font-family:Syne,Manrope,system-ui,sans-serif;font-weight:800}
+button,input{font-family:inherit}button{cursor:pointer}
+:focus-visible{outline:3px solid var(--cyan);outline-offset:3px}
+.wrap{max-width:1120px;margin:0 auto;padding:0 20px}
+.grad{background:linear-gradient(100deg,var(--pink),var(--amber) 45%,var(--cyan));-webkit-background-clip:text;background-clip:text;color:transparent}
+.promo{background:linear-gradient(100deg,var(--pink),var(--violet));color:#fff;text-align:center;font-weight:700;font-size:.88rem;padding:9px 16px}
+nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);background:color-mix(in srgb,var(--bg) 70%,transparent);border-bottom:1px solid var(--line)}
+nav .wrap{display:flex;justify-content:space-between;align-items:center;height:66px}
+.logo{font-size:1.25rem}
+.btn{display:inline-block;border:0;border-radius:99px;background:linear-gradient(100deg,var(--pink),var(--violet));color:#fff;font-weight:700;padding:14px 28px;text-decoration:none;font-size:1rem;box-shadow:0 10px 30px -8px var(--pink);transition:transform .15s,box-shadow .15s}
+.btn:hover{transform:translateY(-2px);box-shadow:0 16px 36px -8px var(--pink)}
+.btn.soft{background:var(--glass);border:1px solid var(--line);color:var(--ink);box-shadow:none}
+.cartbtn{padding:9px 18px}
+.cartbtn b{background:linear-gradient(100deg,var(--pink),var(--violet));color:#fff;border-radius:99px;padding:1px 9px;margin-left:8px}
+.hero .wrap{display:grid;gap:20px;padding-top:52px;padding-bottom:64px}
+@media(min-width:880px){.hero .wrap{grid-template-columns:1.2fr 1fr;align-items:center;padding-top:88px;padding-bottom:96px}}
+.pill{display:inline-flex;gap:8px;align-items:center;border:1px solid var(--line);background:var(--glass);border-radius:99px;padding:6px 14px;font-size:.88rem;color:var(--muted);margin-bottom:20px}
+h1{font-size:clamp(2.5rem,9vw,5rem);line-height:1;margin:0 0 20px;letter-spacing:-.03em}
+.hero p.lead{color:var(--muted);font-size:1.12rem;max-width:44ch;margin:0 0 28px}
+.btns{display:flex;flex-wrap:wrap;gap:12px}
+.orb{position:relative;height:340px;display:grid;place-items:center}
+@media(min-width:880px){.orb{height:450px}}
+.orb::before{content:"";position:absolute;width:min(80%,370px);aspect-ratio:1;border-radius:50%;background:conic-gradient(from 0deg,var(--pink),var(--amber),var(--cyan),var(--violet),var(--pink));filter:blur(40px);opacity:.85;animation:spin 14s linear infinite}
+.orb .disc{position:absolute;width:min(64%,300px);aspect-ratio:1;border-radius:50%;background:radial-gradient(circle at 30% 28%,rgba(255,255,255,.5),rgba(255,255,255,0) 55%),linear-gradient(145deg,var(--violet),var(--bg));border:1px solid var(--line)}
+.orb .core{position:relative;z-index:1;width:46%;--b:var(--amber)}
+.float{position:absolute;z-index:2;width:84px;height:84px;border-radius:24px;padding:12px;background:var(--glass);border:1px solid var(--line);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);animation:bob 6s ease-in-out infinite}
+.f1{left:4%;top:12%;--b:var(--cyan)}.f2{right:4%;top:6%;animation-delay:-2s;--b:var(--pink)}.f3{left:10%;bottom:8%;animation-delay:-4s;--b:var(--amber)}.f4{right:8%;bottom:14%;animation-delay:-1s;--b:var(--ok)}
+@keyframes spin{to{transform:rotate(360deg)}}
+@keyframes bob{50%{transform:translateY(-14px)}}
+@media(prefers-reduced-motion:reduce){.orb::before,.float{animation:none}html{scroll-behavior:auto}.drawer,.btn{transition:none!important}}
+svg{display:block;width:100%;height:auto}
+h2{font-size:clamp(1.9rem,5vw,2.8rem);margin:64px 0 8px;letter-spacing:-.02em;line-height:1.05}
+.sub{color:var(--muted);margin:0 0 22px}
+.offers{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px}
+.offer{position:relative;border:1px solid var(--line);background:var(--glass);border-radius:26px;padding:24px;overflow:hidden;display:flex;flex-direction:column;gap:6px}
+.offer::before{content:"";position:absolute;width:200px;height:200px;border-radius:50%;right:-60px;top:-60px;background:var(--o);filter:blur(60px);opacity:.5}
+.offer>*{position:relative}
+.offer .big{font-family:Syne,sans-serif;font-weight:800;font-size:2.3rem;line-height:1}
+.offer p{color:var(--muted);margin:0 0 10px;flex:1}
+.offer .btn{align-self:flex-start;padding:10px 20px;font-size:.92rem}
+.code{display:inline-block;font-family:Syne,sans-serif;font-weight:800;border:1.5px dashed var(--ink);border-radius:10px;padding:2px 12px;letter-spacing:.04em}
+.chips{display:flex;gap:10px;overflow-x:auto;padding:4px 2px 14px}
+.chip{border:1px solid var(--line);background:var(--glass);color:var(--ink);border-radius:99px;padding:9px 20px;font-weight:600;white-space:nowrap}
+.chip[aria-pressed="true"],.chip[aria-selected="true"]{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:20px}
+.card{--mx:50%;--my:0%;position:relative;border-radius:28px;padding:1px;background:linear-gradient(160deg,color-mix(in srgb,var(--c) 75%,transparent),var(--line) 40%,var(--line));transition:transform .2s}
+.card:hover{transform:translateY(-6px)}
+.inner{position:relative;border-radius:27px;background:var(--bg2);overflow:hidden;height:100%;display:flex;flex-direction:column}
+.inner::before{content:"";position:absolute;inset:0;background:radial-gradient(300px circle at var(--mx) var(--my),color-mix(in srgb,var(--c) 28%,transparent),transparent 60%);pointer-events:none}
+.thumb{position:relative;height:200px;display:grid;place-items:center;padding:28px 56px;background:radial-gradient(circle at 50% 62%,color-mix(in srgb,var(--c) 50%,transparent),transparent 68%);--b:var(--c)}
+.thumb svg{filter:drop-shadow(0 14px 18px rgba(0,0,0,.35));transition:transform .3s}
+.card:hover .thumb svg{transform:scale(1.08) rotate(-2deg)}
+.tag{position:absolute;top:14px;left:14px;z-index:2;background:linear-gradient(100deg,var(--pink),var(--violet));color:#fff;font-weight:700;font-size:.76rem;padding:4px 12px;border-radius:99px}
+.info{position:relative;padding:2px 20px 20px;display:flex;flex-direction:column;gap:4px;flex:1}
+.info h3{margin:0;font-size:1.05rem;line-height:1.3}
+.info p{margin:0;color:var(--muted);font-size:.92rem;flex:1}
+.row{display:flex;justify-content:space-between;align-items:center;margin-top:14px}
+.price{font-size:1.35rem}
+.price s{font-family:Manrope,sans-serif;font-weight:500;font-size:.9rem;color:var(--muted);margin-left:6px}
+.add{width:46px;height:46px;padding:0;font-size:1.6rem;line-height:1}
+.perks{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:16px;margin-top:64px}
+.perks div{border:1px solid var(--line);background:var(--glass);border-radius:22px;padding:22px;color:var(--muted)}
+.perks strong{display:block;color:var(--ink);font-size:1.08rem;margin-bottom:2px}
+.faq{max-width:70ch}
+details{border:1px solid var(--line);background:var(--glass);border-radius:18px;padding:16px 20px;margin-bottom:12px}
+summary{cursor:pointer;font-weight:700}
+details p{color:var(--muted);margin:8px 0 0}
+footer{margin:64px 0 28px;color:var(--muted);font-size:.9rem}
+.overlay{position:fixed;inset:0;background:rgba(5,2,20,.6);backdrop-filter:blur(4px);display:none;z-index:9}
+.overlay.open{display:block}
+.drawer{position:fixed;right:0;top:0;bottom:0;width:min(440px,100%);background:var(--bg2);border-left:1px solid var(--line);z-index:10;display:flex;flex-direction:column;transform:translateX(100%);transition:transform .28s;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+.drawer.open{transform:none}
+.dh{display:flex;justify-content:space-between;align-items:center;padding:16px 22px;border-bottom:1px solid var(--line)}
+.dh h2{margin:0;font-size:1.3rem}
+.x{background:none;border:0;font-size:2rem;color:var(--ink);line-height:1}
+.ship{padding:14px 22px 16px;font-size:.92rem;border-bottom:1px solid var(--line)}
+.track{position:relative;height:8px;background:var(--glass);border:1px solid var(--line);border-radius:9px;margin:12px 0 22px}
+.track i{display:block;height:100%;background:linear-gradient(90deg,var(--pink),var(--cyan));width:0;transition:width .3s;border-radius:9px}
+.track span{position:absolute;top:-4px;transform:translateX(-50%);width:14px;height:14px;border-radius:50%;background:var(--bg2);border:2px solid var(--line)}
+.track span.on{background:var(--ok);border-color:var(--ok)}
+.track em{position:absolute;top:16px;transform:translateX(-50%);font-style:normal;font-size:.72rem;color:var(--muted);white-space:nowrap}
+.items{flex:1;overflow:auto;padding:6px 22px}
+.empty{color:var(--muted);padding:40px 0;text-align:center}
+.it{display:grid;grid-template-columns:58px 1fr auto;gap:12px;align-items:center;padding:12px 0;border-bottom:1px solid var(--line)}
+.it .e{width:58px;height:58px;border-radius:14px;padding:8px;background:var(--glass);border:1px solid var(--line)}
+.it small{color:var(--muted)}
+.it.gift .e{border-color:var(--ok)}
+.free{color:var(--ok);font-weight:700}
+.qty{display:flex;align-items:center;gap:8px;font-weight:700}
+.qty button{width:32px;height:32px;border-radius:50%;border:1px solid var(--line);background:var(--glass);color:var(--ink)}
+.foot{padding:16px 22px;border-top:1px solid var(--line);font-size:.93rem}
+.promoform{display:flex;gap:8px;margin-bottom:6px}
+.promoform input{flex:1;min-width:0;border:1px solid var(--line);background:var(--glass);color:var(--ink);border-radius:99px;padding:10px 16px;text-transform:uppercase}
+.promoform button{padding:10px 18px;font-size:.9rem}
+#pmsg{min-height:1.3em;font-size:.84rem;margin-bottom:6px}
+.wrapopt{display:flex;gap:8px;align-items:center;margin:6px 0 10px}
+.line{display:flex;justify-content:space-between;margin:3px 0;color:var(--muted)}
+.tot{display:flex;justify-content:space-between;font-family:Syne,sans-serif;font-weight:800;font-size:1.3rem;margin:10px 0 12px;color:var(--ink)}
+.pmh{font-weight:700;color:var(--ink);margin:10px 0 6px}
+.pm{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-bottom:8px}
+.pm button{text-align:left;border:1px solid var(--line);background:var(--glass);color:var(--ink);border-radius:14px;padding:9px 12px;line-height:1.25;font-weight:700;font-size:.88rem}
+.pm button small{display:block;font-weight:400;color:var(--muted);font-size:.76rem}
+.pm button[aria-pressed="true"]{border-color:var(--cyan);box-shadow:0 0 0 1.5px var(--cyan)}
+.accept{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}
+.accept span{border:1px solid var(--line);background:var(--glass);border-radius:99px;padding:4px 14px;font-size:.84rem;font-weight:600;color:var(--ink)}
+.pay{display:block;text-align:center;width:100%}
+.pay[aria-disabled="true"]{opacity:.4;pointer-events:none}
+.sepa{display:none;margin-top:12px;border:1px solid var(--line);background:var(--glass);border-radius:16px;padding:14px 16px;font-size:.9rem}
+.sepa.show{display:block}
+.sepa dl{margin:0 0 10px;display:grid;grid-template-columns:auto 1fr;gap:4px 12px}
+.sepa dt{color:var(--muted)}.sepa dd{margin:0;font-weight:700;word-break:break-all}
+.sepa button{border:1px solid var(--line);background:var(--glass);color:var(--ink);border-radius:99px;padding:7px 16px;font-weight:700}
+.sepa p{margin:10px 0 0;color:var(--muted);font-size:.82rem}
+
+.grad{background:linear-gradient(100deg,var(--pink),var(--amber),var(--cyan),var(--pink));background-size:200% 100%;-webkit-background-clip:text;background-clip:text;color:transparent;animation:shine 8s linear infinite}
+@keyframes shine{to{background-position:200% 0}}
+.btn:active{transform:scale(.96)}
+.links{display:none;gap:26px;font-weight:600;font-size:.95rem}.links a{color:var(--muted);text-decoration:none}.links a:hover{color:var(--ink)}@media(min-width:760px){.links{display:flex}}
+.cartbtn b{display:inline-block}
+.bump{animation:bump .45s}
+@keyframes bump{40%{transform:scale(1.5)}}
+.hero .wrap>div:first-child>*{animation:up .85s cubic-bezier(.2,.7,.2,1) both}
+.hero .wrap>div:first-child>*:nth-child(2){animation-delay:.12s}
+.hero .wrap>div:first-child>*:nth-child(3){animation-delay:.24s}
+.hero .wrap>div:first-child>*:nth-child(4){animation-delay:.36s}
+@keyframes up{from{opacity:0;transform:translateY(26px)}}
+.ticker{overflow:hidden;white-space:nowrap;border-block:1px solid var(--line);background:var(--glass)}
+.ticker div{display:inline-block;padding:14px 0;animation:roll 30s linear infinite;font-family:Syne,sans-serif;font-weight:800}
+.ticker span{margin:0 26px}
+@keyframes roll{to{transform:translateX(-50%)}}
+.js .rv{opacity:0;transform:translateY(26px);transition:opacity .7s ease,transform .7s ease}
+.js .rv.in{opacity:1;transform:none}
+.js .card.rv.in:hover{transform:translateY(-6px);transition-delay:0s!important;transition-duration:.2s}
+.tabs{display:flex;gap:10px;overflow-x:auto;padding:4px 2px 14px}
+.sc{display:grid;gap:26px;border:1px solid var(--line);background:var(--glass);border-radius:30px;padding:clamp(18px,4vw,38px)}
+@media(min-width:860px){.sc{grid-template-columns:1fr 1fr;align-items:center}}
+.sc.swap{animation:pop .45s ease}
+@keyframes pop{from{opacity:0;transform:scale(.97)}}
+.stage{position:relative;height:300px;border-radius:24px;overflow:hidden;background:radial-gradient(circle at 50% 75%,color-mix(in srgb,var(--sc) 45%,transparent),transparent 70%),var(--bg2);border:1px solid var(--line)}
+.stage::after{content:"";position:absolute;left:8%;right:8%;bottom:20px;height:6px;border-radius:9px;background:linear-gradient(90deg,var(--pink),var(--cyan));opacity:.55;filter:blur(2px)}
+.it2{position:absolute;width:36%;animation:bob 6s ease-in-out infinite;filter:drop-shadow(0 14px 16px rgba(0,0,0,.35))}
+.p0{left:5%;top:16%}.p1{left:32%;top:46%;animation-delay:-2s}.p2{right:5%;top:12%;animation-delay:-4s}
+.sc h3{font-size:1.7rem;margin:0 0 6px;letter-spacing:-.02em}
+.sc p{color:var(--muted);margin:0}
+.steps{list-style:none;counter-reset:s;padding:0;margin:16px 0 20px;display:grid;gap:12px}
+.steps li{counter-increment:s;display:grid;grid-template-columns:30px 1fr;gap:12px;align-items:start;color:var(--muted);font-size:.95rem}
+.steps li::before{content:counter(s);width:30px;height:30px;border-radius:50%;display:grid;place-items:center;background:linear-gradient(100deg,var(--pink),var(--violet));color:#fff;font-family:Syne,sans-serif;font-weight:800;font-size:.85rem}
+.setup-row{display:flex;flex-wrap:wrap;gap:12px;align-items:center}
+.tp{font-family:Syne,sans-serif;font-weight:800;font-size:1.35rem}
+.toast{position:fixed;left:50%;bottom:calc(20px + env(safe-area-inset-bottom,0px));transform:translate(-50%,30px);opacity:0;pointer-events:none;z-index:20;display:flex;gap:14px;align-items:center;max-width:calc(100% - 32px);background:color-mix(in srgb,var(--bg2) 85%,transparent);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border:1px solid var(--line);border-radius:99px;padding:12px 18px;font-weight:600;font-size:.92rem;transition:opacity .3s,transform .3s}
+.toast.show{opacity:1;transform:translate(-50%,0);pointer-events:auto}
+.toast button{background:linear-gradient(100deg,var(--pink),var(--violet));color:#fff;border:0;border-radius:99px;padding:6px 14px;font-weight:700;font-size:.84rem;white-space:nowrap}
+@media(prefers-reduced-motion:reduce){.js .rv{opacity:1;transform:none;transition:none}.grad,.ticker div,.hero .wrap>div:first-child>*,.it2,.sc.swap,.bump{animation:none!important}.toast{transition:none}}
+</style>
+<script>document.documentElement.classList.add("js")</script>
+</head>
+<body>
+<div class="promo">-10 % avec le code BIENVENUE10 · Cadeau offert dès 30 € · Livraison offerte dès 50 €</div>
+<nav><div class="wrap"><span class="logo">Atelier <span class="grad">Bureau</span></span>
+<div class="links"><a href="#offres">Offres</a><a href="#produits">Produits</a><a href="#exemples">Exemples</a></div>
+<button class="btn soft cartbtn" id="open" aria-label="Ouvrir le panier">Panier<b id="count">0</b></button></div></nav>
+
+<header class="hero"><div class="wrap">
+<div>
+<span class="pill">🎁 Un cadeau offert dès 30 € d’achat</span>
+<h1>Le bureau de demain, <span class="grad">avec des cadeaux.</span></h1>
+<p class="lead">Des accessoires au design soigné, des offres sur les packs, et un cadeau dans chaque commande à partir de 30 €.</p>
+<div class="btns"><a class="btn" href="#produits">Voir la sélection</a><a class="btn soft" href="#offres">Mes offres</a></div>
+</div>
+<div class="orb" aria-hidden="true">
+<span class="disc"></span><div class="core" id="core"></div>
+<div class="float f1" id="f1"></div><div class="float f2" id="f2"></div><div class="float f3" id="f3"></div><div class="float f4" id="f4"></div>
+</div>
+</div></header>
+<div class="ticker" aria-hidden="true"><div id="tick"></div></div>
+
+<main class="wrap">
+<h2 id="offres">Offres <span class="grad">du moment</span></h2>
+<p class="sub">Elles s’appliquent directement dans votre panier.</p>
+<div class="offers">
+<div class="offer" style="--o:var(--pink)"><span class="big grad">-10 %</span><strong>Offre de bienvenue</strong><p>Sur toute votre première commande avec le code <span class="code">BIENVENUE10</span></p><button class="btn" id="usecode">Utiliser le code</button></div>
+<div class="offer" style="--o:var(--cyan)"><span class="big grad">Pack −13 %</span><strong>Pack Télétravail</strong><p>Support, lampe et tapis ensemble : 64,90 € au lieu de 74,70 €.</p><a class="btn soft" href="#produits">Voir le pack</a></div>
+<div class="offer" style="--o:var(--amber)"><span class="big grad">Cadeau</span><strong>Chiffon microfibre offert</strong><p>Dès 30 € d’achat, il est ajouté automatiquement. Dès 80 €, remise de 10 % en plus.</p><a class="btn soft" href="#produits">Remplir mon panier</a></div>
+</div>
+
+<h2 id="produits">La <span class="grad">sélection</span></h2>
+<p class="sub">Appuyez sur + pour ajouter un produit au panier.</p>
+<div class="chips" id="chips" role="group" aria-label="Filtrer par catégorie"></div>
+<div class="grid" id="grid"></div>
+
+<h2 id="exemples">Exemples <span class="grad">d’utilisation</span></h2>
+<p class="sub">Trois façons d’installer votre bureau. Choisissez celle qui vous ressemble.</p>
+<div class="tabs" id="tabs" role="tablist" aria-label="Exemples d’installation"></div>
+<div class="sc" id="scene" role="tabpanel"></div>
+
+<div class="perks">
+<div><strong>Livraison</strong>Les frais, destinations et délais seront confirmés selon le pays et le fournisseur avant l’ouverture des commandes.</div>
+<div><strong>Retours sous 14 jours</strong>Un souci ? On règle ça vite.</div>
+<div><strong>Emballage cadeau</strong>Pour offrir, ajoutez-le dans le panier (2,90 €).</div>
+</div>
+<h2>Un paiement <span class="grad">simple</span></h2>
+<p class="sub">Choisissez votre moyen de paiement dans le panier.</p>
+<div class="accept">
+<span>Virement bancaire SEPA</span>
+</div>
+
+<h2>Des questions ?</h2>
+<div class="faq">
+<details><summary>Comment obtenir le cadeau offert ?</summary><p>Il est ajouté automatiquement au panier dès que vos produits atteignent 30 €.</p></details>
+<details><summary>Les offres se cumulent-elles ?</summary><p>Non, la meilleure remise s’applique : le code BIENVENUE10 ou la remise de 10 % dès 80 €.</p></details>
+<details><summary>Quel moyen de paiement est proposé ?</summary><p>Le site affiche actuellement les instructions pour un virement bancaire SEPA. Le paiement en ligne automatisé n’est pas encore activé.</p></details>
+<details><summary>Quand vais-je recevoir ma commande ?</summary><p>Les délais dépendront du pays de destination et du fournisseur sélectionné. Ils devront être affichés clairement avant l’ouverture des commandes.</p></details>
+<details><summary>Le paiement en ligne est-il déjà automatisé ?</summary><p>Non. Pour le moment, le site présente uniquement les instructions de virement SEPA. Une solution de paiement sécurisée devra être connectée avant l’ouverture officielle des ventes.</p></details>
+</div>
+<h2 id="legal">Informations <span class="grad">légales</span></h2>
+<p class="sub">Les parties entre crochets sont à compléter avant l’ouverture de la boutique.</p>
+<div class="faq">
+<details><summary>Mentions légales</summary><p>Site édité par [NOM OU RAISON SOCIALE], [FORME JURIDIQUE], SIRET [NUMÉRO], [ADRESSE COMPLÈTE]. Contact : [E-MAIL] · [TÉLÉPHONE]. Directeur de la publication : [NOM]. Hébergeur : [NOM ET ADRESSE DE L’HÉBERGEUR]. N° de TVA : [NUMÉRO OU « TVA non applicable »].</p></details>
+<details><summary>Conditions générales de vente</summary><p>Prix en euros. Les taxes, frais de livraison, pays desservis et délais devront être confirmés et affichés avant l’ouverture des commandes. Droit de rétractation : 14 jours à compter de la réception, sans justification ; les frais de retour sont à la charge de [VOUS OU LE CLIENT]. Garanties légales de conformité et des vices cachés applicables. Médiateur de la consommation : [NOM ET COORDONNÉES]. Droit applicable : droit français.</p></details>
+<details><summary>Confidentialité et cookies</summary><p>Ce site conserve uniquement le contenu de votre panier dans votre navigateur, pour le retrouver à votre retour. Les paiements sont traités par nos prestataires de paiement, qui ne nous transmettent pas vos données bancaires. Pour toute demande sur vos données : [E-MAIL].</p></details>
+</div>
+<footer>© Atelier Bureau · [E-MAIL] · <a href="#legal">Mentions légales</a> · <a href="#legal">CGV</a> · <a href="#legal">Confidentialité</a></footer>
+</main>
+
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+<div class="overlay" id="ov"></div>
+<aside class="drawer" id="drawer" role="dialog" aria-modal="true" aria-label="Panier" aria-hidden="true" inert>
+<div class="dh"><h2>Mon panier</h2><button class="x" id="close" aria-label="Fermer le panier">×</button></div>
+<div class="ship" id="ship"></div>
+<div class="items" id="items"></div>
+<div class="foot">
+<div class="promoform"><input id="code" placeholder="Code promo" aria-label="Code promo"><button class="btn soft" id="apply">Appliquer</button></div>
+<div id="pmsg" role="status"></div>
+<label class="wrapopt"><input type="checkbox" id="wrap"> Emballage cadeau (+2,90 €)</label>
+<div id="lines"></div>
+<div class="tot"><span>Total</span><span id="total">0,00 €</span></div>
+<div class="pmh">Moyen de paiement</div>
+<div class="pm" id="pm" role="group" aria-label="Moyen de paiement"></div>
+<a class="btn pay" id="pay" href="#" aria-disabled="true">Payer</a>
+<div class="sepa" id="sepa" aria-live="polite"></div></div>
+</aside>
+
+<script>
+// MOYEN DE PAIEMENT ACTUEL : virement SEPA. Le paiement automatisé reste à connecter.
+const IBAN_B64="QkU0OTkwNTg3NzcyMDY3MQ==";            // IBAN du vendeur (affiché seulement au moment de choisir le virement)
+const TITULAIRE="";             // Nom du titulaire du compte (à renseigner)
+const BANQUE="";
+const BIC="";                   // BIC (facultatif en zone SEPA)
+const PAY={virement:{nom:"Virement SEPA",sous:"Instructions affichées après sélection",url:"#"}};
+let methode="virement";
+const CODES={BIENVENUE10:.10};
+const GIFT_AT=30,SHIP_AT=50,DISC_AT=80,SHIP_COST=4.9,WRAP_COST=2.9,TIER_DISC=.10;
+const D={
+1:'<rect x="55" y="38" width="90" height="56" rx="5" fill="var(--a)" transform="rotate(-8 100 66)"/><rect x="60" y="43" width="80" height="46" rx="2" fill="var(--bg2)" transform="rotate(-8 100 66)"/><path d="M70 130 L100 96 L130 130" stroke="var(--b)" stroke-width="8" fill="none" stroke-linecap="round" stroke-linejoin="round"/><rect x="50" y="128" width="100" height="8" rx="4" fill="var(--b)"/>',
+2:'<path d="M100 130 V80 L130 50" stroke="var(--a)" stroke-width="7" fill="none" stroke-linecap="round" stroke-linejoin="round"/><path d="M118 38 L150 56 L136 72 Z" fill="var(--b)"/><rect x="72" y="128" width="56" height="10" rx="5" fill="var(--a)"/><circle cx="150" cy="88" r="14" fill="var(--b)" opacity=".3"/>',
+3:'<rect x="25" y="70" width="150" height="62" rx="12" fill="var(--a)"/><rect x="25" y="70" width="150" height="62" rx="12" fill="none" stroke="var(--b)" stroke-width="3" stroke-dasharray="2 8" stroke-linecap="round"/><rect x="90" y="88" width="22" height="30" rx="11" fill="var(--bg2)"/>',
+4:'<g fill="var(--a)"><rect x="40" y="90" width="28" height="28" rx="8"/><rect x="86" y="90" width="28" height="28" rx="8"/><rect x="132" y="90" width="28" height="28" rx="8"/></g><path d="M20 80 C60 40 100 120 180 70" stroke="var(--b)" stroke-width="5" fill="none" stroke-linecap="round"/>',
+5:'<path d="M40 120 L150 120 L165 90 L55 90 Z" fill="var(--a)"/><rect x="40" y="120" width="110" height="14" rx="5" fill="var(--b)"/>',
+6:'<rect x="40" y="70" width="120" height="62" rx="8" fill="var(--a)"/><g fill="var(--bg2)"><rect x="50" y="80" width="24" height="42" rx="4"/><rect x="80" y="80" width="24" height="42" rx="4"/><rect x="110" y="80" width="40" height="42" rx="4"/></g><rect x="58" y="46" width="6" height="34" rx="3" fill="var(--b)"/><rect x="88" y="52" width="6" height="28" rx="3" fill="var(--b)"/>',
+7:'<rect x="45" y="72" width="110" height="62" rx="8" fill="var(--a)"/><rect x="92" y="72" width="16" height="62" fill="var(--b)"/><rect x="40" y="56" width="120" height="22" rx="6" fill="var(--b)"/><path d="M100 56 C80 26 60 40 80 52 M100 56 C120 26 140 40 120 52" stroke="var(--b)" stroke-width="6" fill="none" stroke-linecap="round"/>',
+8:'<rect x="48" y="58" width="104" height="72" rx="12" fill="var(--a)" transform="rotate(-6 100 94)"/><path d="M62 86 L138 78 M64 104 L140 96" stroke="var(--b)" stroke-width="5" stroke-linecap="round" transform="rotate(-6 100 94)"/>'
+};
+const svg=id=>'<svg viewBox="0 0 200 160" aria-hidden="true">'+D[id]+'</svg>';
+const produits=[
+{id:7,cat:"Packs",nom:"Pack Télétravail",desc:"Support + lampe + tapis XXL",prix:64.9,ancien:74.7,c:"#ff3cac",tag:"-13 %"},
+{id:1,cat:"Ordinateur",nom:"Support d’ordinateur",desc:"Aluminium, réglable en hauteur",prix:29.9,c:"#2bd9fe",tag:"Best-seller"},
+{id:2,cat:"Éclairage",nom:"Lampe de bureau LED",desc:"3 températures de lumière, USB",prix:24.9,c:"#ffb86b"},
+{id:3,cat:"Ordinateur",nom:"Tapis de bureau XXL",desc:"Surface douce, antidérapant",prix:19.9,c:"#a78bfa"},
+{id:4,cat:"Rangement",nom:"Organisateur de câbles",desc:"Lot de 10 clips adhésifs",prix:9.9,c:"#34d399",tag:"Petit prix"},
+{id:5,cat:"Confort",nom:"Repose-pieds ergonomique",desc:"Inclinaison réglable",prix:34.9,c:"#fb7185"},
+{id:6,cat:"Rangement",nom:"Rangement de bureau en bois",desc:"4 compartiments",prix:17.9,c:"#ffa56b"}
+];
+const cadeau={id:8,nom:"Chiffon microfibre premium",c:"#4fe0a8"};
+const cart={};let filtre="Tout",code="",wrapOn=false;
+const $=id=>document.getElementById(id);
+const eur=n=>n.toFixed(2).replace(".",",")+" €";
+$("core").innerHTML=svg(1);$("f1").innerHTML=svg(2);$("f2").innerHTML=svg(3);$("f3").innerHTML=svg(5);$("f4").innerHTML=svg(7);
+
+function renderChips(){
+const cats=["Tout",...new Set(produits.map(p=>p.cat))];$("chips").innerHTML="";
+cats.forEach(c=>{const b=document.createElement("button");b.className="chip";b.textContent=c;b.setAttribute("aria-pressed",c===filtre);
+b.onclick=()=>{filtre=c;renderChips();renderGrid()};$("chips").appendChild(b)});
+}
+function renderGrid(){
+const g=$("grid");g.innerHTML="";
+produits.filter(p=>filtre==="Tout"||p.cat===filtre).forEach((p,i)=>{
+const c=document.createElement("article");c.className="card";c.style.setProperty("--c",p.c);
+c.innerHTML='<div class="inner">'+(p.tag?'<span class="tag"></span>':'')+'<div class="thumb" aria-hidden="true">'+svg(p.id)+'</div><div class="info"><h3></h3><p></p><div class="row"><span class="price"></span><button class="btn add"></button></div></div></div>';
+if(p.tag)c.querySelector(".tag").textContent=p.tag;
+c.querySelector("h3").textContent=p.nom;c.querySelector("p").textContent=p.desc;
+const pr=c.querySelector(".price");pr.textContent=eur(p.prix);
+if(p.ancien){const s=document.createElement("s");s.textContent=eur(p.ancien);pr.appendChild(s)}
+const a=c.querySelector(".add");a.textContent="+";a.setAttribute("aria-label","Ajouter "+p.nom+" au panier");
+a.onclick=()=>{cart[p.id]=(cart[p.id]||0)+1;renderCart();toast("Ajouté : "+p.nom,true)};
+c.addEventListener("pointermove",e=>{const r=c.getBoundingClientRect();c.style.setProperty("--mx",(e.clientX-r.left)+"px");c.style.setProperty("--my",(e.clientY-r.top)+"px")});
+c.classList.add("rv");c.style.transitionDelay=(i%6*70)+"ms";g.appendChild(c)});reveal();
+}
+function pmsg(t,ok){const m=$("pmsg");m.textContent=t;m.style.color=ok?"var(--ok)":"var(--pink)"}
+function renderCart(){
+const ids=Object.keys(cart).filter(i=>cart[i]>0);let sub=0,n=0;const box=$("items");box.innerHTML="";
+if(!ids.length)box.innerHTML='<div class="empty">Votre panier est vide.</div>';
+ids.forEach(i=>{const p=produits.find(x=>x.id==i);const q=cart[i];sub+=p.prix*q;n+=q;
+const r=document.createElement("div");r.className="it";
+r.innerHTML='<div class="e" style="--b:'+p.c+'">'+svg(p.id)+'</div><div><div></div><small></small></div><div class="qty"><button aria-label="Retirer un">−</button><span></span><button aria-label="Ajouter un">+</button></div>';
+r.querySelector("div div").textContent=p.nom;r.querySelector("small").textContent=eur(p.prix);r.querySelector(".qty span").textContent=q;
+const bs=r.querySelectorAll("button");bs[0].onclick=()=>{cart[i]--;renderCart()};bs[1].onclick=()=>{cart[i]++;renderCart()};
+box.appendChild(r)});
+const hasGift=sub>=GIFT_AT;
+if(quiet){}
+else if(prevSub<GIFT_AT&&sub>=GIFT_AT)toast("🎁 Cadeau débloqué : chiffon microfibre offert !");
+else if(prevSub<SHIP_AT&&sub>=SHIP_AT)toast("🚚 Livraison offerte débloquée !");
+else if(prevSub<DISC_AT&&sub>=DISC_AT)toast("✨ -10 % débloqué sur votre commande !");
+prevSub=sub;
+if(hasGift){const r=document.createElement("div");r.className="it gift";
+r.innerHTML='<div class="e" style="--b:'+cadeau.c+'">'+svg(cadeau.id)+'</div><div><div></div><small class="free">Cadeau offert</small></div><span class="free">0,00 €</span>';
+r.querySelector("div div").textContent=cadeau.nom;box.appendChild(r)}
+// remise : la meilleure entre code et palier
+const dCode=code?CODES[code]:0,dTier=sub>=DISC_AT?TIER_DISC:0;
+const rate=Math.max(dCode,dTier);const remise=Math.round(sub*rate*100)/100;
+const wrapCost=n&&wrapOn?WRAP_COST:0;
+const ship=n?(sub>=SHIP_AT?0:SHIP_COST):0;
+const total=Math.round((sub-remise+wrapCost+ship)*100)/100;
+// progression
+const next=[[GIFT_AT,"un cadeau offert"],[SHIP_AT,"la livraison offerte"],[DISC_AT,"-10 % sur tout"]].find(x=>sub<x[0]);
+$("ship").innerHTML=(next?'Plus que <strong>'+eur(next[0]-sub)+'</strong> pour '+next[1]:'<strong>Tous vos avantages sont débloqués !</strong>')+
+'<div class="track"><i style="width:'+Math.min(100,sub/DISC_AT*100)+'%"></i>'+
+[[GIFT_AT,"Cadeau"],[SHIP_AT,"Livraison"],[DISC_AT,"-10 %"]].map(m=>'<span class="'+(sub>=m[0]?"on":"")+'" style="left:'+(m[0]/DISC_AT*100)+'%"></span><em style="left:'+(m[0]/DISC_AT*100)+'%">'+m[1]+'</em>').join("")+'</div>';
+let L='<div class="line"><span>Sous-total</span><span>'+eur(sub)+'</span></div>';
+if(remise>0)L+='<div class="line"><span>Remise '+Math.round(rate*100)+' %</span><span class="free">−'+eur(remise)+'</span></div>';
+if(hasGift)L+='<div class="line"><span>Cadeau</span><span class="free">Offert</span></div>';
+if(wrapCost)L+='<div class="line"><span>Emballage cadeau</span><span>'+eur(wrapCost)+'</span></div>';
+if(n)L+='<div class="line"><span>Livraison</span><span'+(ship?'':' class="free"')+'>'+(ship?eur(ship):"Offerte")+'</span></div>';
+$("lines").innerHTML=L;
+$("count").textContent=n;$("total").textContent=eur(total);
+if(n>prevN){const c=$("count");c.classList.remove("bump");void c.offsetWidth;c.classList.add("bump")}
+prevN=n;
+renderPay(n,total);
+}
+function renderPay(n,total){
+const pm=$("pm");pm.innerHTML="";
+Object.keys(PAY).forEach(k=>{
+const b=document.createElement("button");b.setAttribute("aria-pressed",k===methode);
+const sous=PAY[k].sous;
+b.innerHTML='<span></span><small></small>';b.querySelector("span").textContent=PAY[k].nom;b.querySelector("small").textContent=sous;
+b.onclick=()=>{methode=k;renderPay(n,total)};pm.appendChild(b)});
+$("sepa").classList.remove("show");
+const pay=$("pay");
+pay.href="#";
+pay.setAttribute("aria-disabled",n?"false":"true");
+pay.textContent=n?"Voir les instructions de virement · "+eur(total):"Voir les instructions de paiement";
+save();
+}
+
+function showSepa(){
+const raw=atob(IBAN_B64),iban=raw.replace(/(.{4})/g,"$1 ").trim();
+const ref="AB-"+Date.now().toString(36).toUpperCase().slice(-6);
+const sp=$("sepa");sp.innerHTML="";
+const dl=document.createElement("dl");
+const add=(t,v)=>{const a=document.createElement("dt"),b=document.createElement("dd");a.textContent=t;b.textContent=v;dl.appendChild(a);dl.appendChild(b)};
+if(TITULAIRE)add("Bénéficiaire",TITULAIRE);
+add("IBAN",iban);
+if(BIC)add("BIC",BIC);
+if(BANQUE)add("Banque",BANQUE);
+add("Montant",$("total").textContent);
+add("Référence",ref);
+sp.appendChild(dl);
+const cp=document.createElement("button");cp.textContent="Copier l’IBAN";
+cp.onclick=()=>{try{navigator.clipboard.writeText(raw).then(()=>toast("IBAN copié"))}catch(e){toast("Copiez l’IBAN manuellement")}};
+sp.appendChild(cp);
+const pp=document.createElement("p");pp.textContent="Indiquez la référence dans le libellé du virement. La commande est préparée dès réception des fonds (1 à 2 jours).";
+sp.appendChild(pp);
+sp.classList.add("show");
+}
+function save(){try{localStorage.setItem("ab_cart",JSON.stringify({cart,code,wrapOn,methode}))}catch(e){}}
+function applyCode(v){
+const c=v.trim().toUpperCase();
+if(!c){code="";pmsg("");renderCart();return}
+if(CODES[c]){code=c;pmsg("Code "+c+" appliqué : -"+(CODES[c]*100)+" % (non cumulable avec la remise dès 80 €).",true)}
+else{code="";pmsg("Ce code n’existe pas. Vérifiez l’orthographe.",false)}
+renderCart();
+}
+$("apply").onclick=()=>applyCode($("code").value);
+$("code").addEventListener("keydown",e=>{if(e.key==="Enter")applyCode($("code").value)});
+$("wrap").onchange=e=>{wrapOn=e.target.checked;renderCart()};
+$("usecode").onclick=()=>{$("code").value="BIENVENUE10";applyCode("BIENVENUE10");openCart()};
+let lastFocus=null;
+function openCart(){lastFocus=document.activeElement;$("drawer").inert=false;$("drawer").classList.add("open");$("ov").classList.add("open");$("drawer").setAttribute("aria-hidden","false");document.body.style.overflow="hidden";$("close").focus()}
+function closeCart(){$("drawer").classList.remove("open");$("ov").classList.remove("open");$("drawer").setAttribute("aria-hidden","true");$("drawer").inert=true;document.body.style.overflow="";if(lastFocus&&lastFocus.focus)lastFocus.focus()}
+$("open").onclick=openCart;$("close").onclick=closeCart;$("ov").onclick=closeCart;
+document.addEventListener("keydown",e=>{if(e.key==="Escape")closeCart()});
+function toast(m,voir){
+const t=$("toast");t.innerHTML="";const s=document.createElement("span");s.textContent=m;t.appendChild(s);
+if(voir){const b=document.createElement("button");b.textContent="Voir le panier";b.onclick=()=>{t.classList.remove("show");openCart()};t.appendChild(b)}
+t.classList.add("show");clearTimeout(toast.t);toast.t=setTimeout(()=>t.classList.remove("show"),3400);
+}
+const io=("IntersectionObserver" in window)?new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add("in");io.unobserve(e.target)}}),{threshold:.12}):null;
+function reveal(){document.querySelectorAll(".rv:not(.in)").forEach(el=>io?io.observe(el):el.classList.add("in"))}
+
+// Exemples d'utilisation : trois installations types
+const scenes=[
+{nom:"Télétravail à la maison",ids:[1,2,3],c:"#2bd9fe",
+ txt:"Pour travailler plusieurs heures par jour sans fatigue : écran à bonne hauteur, lumière douce et surface confortable.",
+ etapes:["Posez votre portable sur le support et réglez l’angle pour garder la nuque droite.","Placez la lampe du côté opposé à votre main d’écriture pour éviter les ombres.","Étendez le tapis sous le clavier et la souris : le bureau reste propre et silencieux."]},
+{nom:"Étudiant, petit espace",ids:[2,4,6],c:"#ffb86b",
+ txt:"Pour réviser sur une petite table : tout est rangé, les câbles ne traînent pas et la lumière est réglable le soir.",
+ etapes:["Rangez stylos et notes dans le rangement en bois, à portée de main.","Fixez les câbles le long du bureau avec les clips adhésifs.","Choisissez une lumière chaude pour les révisions du soir."]},
+{nom:"Confort pour longues journées",ids:[1,5,3],c:"#fb7185",
+ txt:"Pour limiter les douleurs du dos et des jambes quand vous restez assis longtemps.",
+ etapes:["Surélevez l’écran avec le support pour soulager le cou.","Posez les pieds sur le repose-pieds et ajustez l’inclinaison.","Gardez les avant-bras à plat sur le tapis pour détendre les épaules."]}
+];
+let scIdx=0;
+function renderTabs(){
+const tb=$("tabs");tb.innerHTML="";
+scenes.forEach((s,i)=>{const b=document.createElement("button");b.className="chip";b.textContent=s.nom;b.setAttribute("role","tab");b.setAttribute("aria-selected",i===scIdx);
+b.onclick=()=>{scIdx=i;renderTabs();renderScene(true)};tb.appendChild(b)});
+}
+function renderScene(anim){
+const s=scenes[scIdx],box=$("scene");
+const items=s.ids.map(id=>produits.find(p=>p.id===id));
+const tot=items.reduce((a,p)=>a+p.prix,0);
+box.style.setProperty("--sc",s.c);
+box.innerHTML='<div class="stage" aria-hidden="true"></div><div><h3></h3><p></p><ol class="steps"></ol><div class="setup-row"><span class="tp"></span><button class="btn" id="addsetup">Ajouter ce setup</button></div></div>';
+const st=box.querySelector(".stage");
+items.forEach((p,i)=>{const d=document.createElement("div");d.className="it2 p"+i;d.style.setProperty("--b",p.c);d.innerHTML=svg(p.id);st.appendChild(d)});
+box.querySelector("h3").textContent=s.nom;box.querySelector("p").textContent=s.txt;
+s.etapes.forEach(e=>{const li=document.createElement("li");li.textContent=e;box.querySelector(".steps").appendChild(li)});
+box.querySelector(".tp").textContent=eur(tot)+" · "+items.length+" produits";
+$("addsetup").onclick=()=>{s.ids.forEach(id=>cart[id]=(cart[id]||0)+1);renderCart();toast("Setup ajouté au panier",true)};
+if(anim){box.classList.remove("swap");void box.offsetWidth;box.classList.add("swap")}
+}
+
+// Bandeau défilant
+const msgs=["Cadeau offert dès 30 €","Livraison offerte dès 50 €","-10 % avec BIENVENUE10","Paiement par virement SEPA","Retours sous 14 jours"];
+const bande=msgs.map(m=>"<span>✦ "+m+"</span>").join("").repeat(3);
+$("tick").innerHTML=bande+bande;
+
+let prevSub=0,prevN=0,quiet=true;
+try{const sv=JSON.parse(localStorage.getItem("ab_cart")||"{}");
+Object.keys(sv.cart||{}).forEach(k=>{if(produits.some(p=>p.id==k))cart[k]=Math.max(0,Math.min(99,+sv.cart[k]||0))});
+code=CODES[sv.code]?sv.code:"";wrapOn=!!sv.wrapOn;if(PAY[sv.methode])methode=sv.methode;
+$("code").value=code;$("wrap").checked=wrapOn}catch(e){}
+$("pay").addEventListener("click",e=>{const a=$("pay");
+if(a.getAttribute("aria-disabled")==="true"){e.preventDefault();return}
+if(methode==="virement"){e.preventDefault();showSepa();return}
+const h=a.getAttribute("href");if(!h||h==="#"){e.preventDefault();toast("Mode démonstration : ajoutez votre lien de paiement dans le script.")}});
+renderChips();renderGrid();renderCart();renderTabs();renderScene(false);
+if(code)pmsg("Code "+code+" appliqué.",true);
+document.querySelectorAll(".offer,.perks>div,.accept,.sc,.faq details").forEach(e=>e.classList.add("rv"));
+reveal();
+quiet=false;
+</script>
+</body>
+</html>
